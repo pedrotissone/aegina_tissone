@@ -107,8 +107,11 @@ body {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.849);
     transform: rotate(15deg);
+    transition: rotate, 2s;
 
-
+}
+.header__slogan:hover {
+    transform: rotate(0deg);
 }
 
 
@@ -774,3 +777,4 @@ footer {
 
 
 
+}
