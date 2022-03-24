@@ -184,18 +184,23 @@ footer {
     margin-top: 2rem;
     margin-left: 24rem;
 
-
 }
 
 .footer__intagram,
 .footer__whatsapp,
 .footer__email,
 .footer__ubicacion {
-    font-family: 'Source Serif Pro', serif;
-    border-bottom: solid 0.1rem black;
+    font-family: 'Source Serif Pro', serif;    
+    text-decoration: underline;
     margin-right: 1vw;
+}
+
+footer a {
+    font-family: var(--font-principal);
+    color: black;
 
 }
+
 
 .copyright {
     display: flex;
@@ -285,7 +290,7 @@ footer {
     flex-direction: row;    
     justify-content: center;
     background-color: var(--background-verde);
-    border: solid var(--letra-blanca) 0.2rem;
+    border: solid var(--letra-blanca) 0.1rem;
 
 }
 
@@ -319,10 +324,7 @@ footer {
     align-items: center;
     margin: 0.5rem;
     border: solid 0.2rem var(--letra-blanca);
-
 }
-
-
 
 
 
@@ -494,8 +496,8 @@ a.btn.btn-primary {
     border-radius: 3%;
 }
 
-.header6 {
-    height: 20rem;
+.header6 {    
+    height: auto;
 }
 
 .header6__title {
@@ -510,9 +512,8 @@ a.btn.btn-primary {
 }
 
 .main6 {
-    margin-bottom: 2rem;
-    
-    
+    margin-bottom: 2rem;    
+  
 }
 
 .main__form {        
