@@ -26,8 +26,8 @@ html {
 /* ARCHIVO HTML INDEX */
 
 body {
-    /* background-color: var(--body-background); */
-    background-image: linear-gradient(blue , green);
+    background-color: var(--body-background);
+    
 }
 
 /* CONTENEDOR GRID */
@@ -276,127 +276,197 @@ footer {
 /* ARCHIVO HTML 3 (GALERÍA) */
 
 .body3 {    
-    background-color: rgba(174, 118, 50, 0.734);
-
+    background-color: rgba(49, 48, 47, 0.624);
 }
 
-.contenedorGrid3 {
-    display: grid;
-    grid-template-areas: "header3 header3 header3"
-                            "manin3 main3 main3"
-                         "footer3 footer3 footer3";
-}
-
-.header3 {
-    grid-area: header3;
+.header3 { 
+    width: 100%; 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;    
     justify-content: center;
+    background-color: var(--background-verde);
+    border: solid var(--letra-blanca) 0.2rem;
 
 }
 
 .header3__title {
+    text-align: center;    
     font-family: var(--font-principal);
-    font-size: 3rem;
-    color: rgba(255, 255, 255, 0.611);
+    font-size: 2.5rem;
+    color: var(--letra-blanca);
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 7rem;
-    font-style: italic;
-    text-decoration: underline;
-
+    word-spacing: 0.3rem;    
 
 }
 
 .main3 {
-    grid-area: main3;
-    width: 120rem;
-
+    width: 100%;
 }
+
 
 .picture3 {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 11rem;
+    justify-content: center;
+        
 
 }
 
 .picture3__img1,
 .picture3__img2,
 .picture3__img3 {
+    align-items: center;
     margin: 0.5rem;
     border: solid 0.2rem var(--letra-blanca);
 
 }
 
-.footer3 {
-    grid-area: footer3;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 110rem;
 
-}
-
-.footer3 p {    
-    font-family: 'Source Serif Pro', serif;
-    border-bottom: solid 0.1rem black;
-    margin-right: 15rem;
-
-
-}
-
-.copyright3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-}
-
-.copyright3 p {
-    margin-left: 15rem;
-    font-weight: 100;
-}
 
 
 
 /* ARCHIVO HTML 4 (FLORES PRESERVADAS) */
 
-.main4 h2 {
-    font-family: 'Source Serif Pro', serif;
-    color: rgb(101, 150, 165);
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
+.body4 {
+    background-color: rgba(182, 162, 80, 0.59);
+}
+
+.header4 {   
+    background-color: var(--background-verde);
+    border: solid whitesmoke 0.2rem;
+
+}
+
+.header4 h2 {    
+    color: var(--letra-blanca);
+    font-family: var(--font-principal);
+    margin: 0.5%;
+    font-size: 1.8rem;
+       
+}
+
+.main4 {
+    height: auto;
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.main4__titles {
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 2%;    
+    
+}
+.main4__titles h2 {
+    font-family: var(--font-principal);
+    text-decoration: underline;       
+    color: var(--letra-blanca);
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    margin: 0%;
+}
+
+
+div.card {
+    background-color: var(--letra-blanca);
+    
+}
+
+h5.card-title {
+    font-family: var(--font-principal);
+    color: rgb(148, 129, 129);
     text-decoration: underline;
 }
 
-.main4__tr td {
-    width: 150px;
-    height: 150px;
-    background-color: azure;
-    text-align: center;
-    border: 1px solid black;
+p.card-text {
+    font-family: var(--font-principal);
+    color: rgb(148, 129, 129);
 }
+
+a.btn.btn-primary {
+    font-family: var(--font-principal);
+    color: var(--letra-blanca);
+}
+
+
 
 /* ARCHIVO HTML 5 (PEDRERÍA) */
 
-.main5 h2 {
-    font-family: 'Source Serif Pro', serif;
-    color: rgb(101, 150, 165);
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
+.body5 {
+    background-color: rgba(109, 104, 99, 0.823);
+}
+
+.header5 {   
+    background-color: var(--background-verde);
+    border: solid whitesmoke 0.2rem;
+
+}
+
+.header5 h2 {    
+    color: var(--letra-blanca);
+    font-family: var(--font-principal);
+    margin: 0.5%;
+    font-size: 1.8rem;
+       
+}
+
+.main5 {
+    height: auto;
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.main5__titles {
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 2%;    
+    
+}
+.main5__titles h2 {
+    font-family: var(--font-principal);
+    text-decoration: underline;       
+    color: var(--letra-blanca);
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    margin: 0%;
+}
+
+
+div.card {
+    background-color: var(--letra-blanca);
+    
+}
+
+h5.card-title {
+    font-family: var(--font-principal);
+    color: rgb(148, 129, 129);
     text-decoration: underline;
 }
 
-.main5__tr td {
-    width: 150px;
-    height: 150px;
-    background-color: azure;
-    text-align: center;
-    border: 1px solid black;
+p.card-text {
+    font-family: var(--font-principal);
+    color: rgb(148, 129, 129);
 }
+
+a.btn.btn-primary {
+    font-family: var(--font-principal);
+    color: var(--letra-blanca);
+}
+
+
 
 /* ARCHIVO HTML 6 (CONTACTO) */
 
@@ -406,15 +476,17 @@ footer {
     background-color: rgba(79, 79, 70, 0.734);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-image: radial-gradient(gray , purple);
 }
 
 
 .contenedorFlex6 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
     width: 60rem;
-    height: 70rem;
+    height: 70rem;    
     background-image: url(../img/contacto/contacto-img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,10 +494,14 @@ footer {
     border-radius: 3%;
 }
 
+.header6 {
+    height: 20rem;
+}
 
 .header6__title {
     font-family: 'Source Serif Pro', serif;
     font-size: 3rem;
+    height: 10rem;
     color: rgb(101, 150, 165);
     text-decoration: underline;
     font-style: italic;
@@ -435,13 +511,16 @@ footer {
 
 .main6 {
     margin-bottom: 2rem;
+    
+    
 }
 
-.main__form {
+.main__form {        
     font-family: 'Source Serif Pro', serif;
     color: rgb(101, 150, 165);
     font-style: italic;
     border: solid 0.1rem rgb(101, 150, 165);
+    
 
 }
 
