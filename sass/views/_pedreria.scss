@@ -1,0 +1,71 @@
+
+.body5 {
+    background-color: rgba(109, 104, 99, 0.823);
+}
+
+.header5 {   
+    background-color: $background-verde;
+    border: solid whitesmoke 0.2rem;
+
+    h2 {    
+        color: $letra-blanca;
+        font-family: $font-principal;
+        margin: 0.5%;
+        font-size: 1.8rem;           
+    }
+}
+
+.main5 {
+    height: auto;
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__titles {
+        width: 100%;
+        height: auto;    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 2%; 
+    }
+    
+    .main5__titles h2 {
+        width: 100%;
+        height: auto;
+        font-family: $font-principal;
+        text-decoration: underline;       
+        color: $letra-blanca;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        margin: 0%;
+    }
+
+}
+
+div.card {
+    background-color: $letra-blanca;
+    
+}
+
+h5.card-title {
+    font-family: $font-principal;
+    color: rgb(148, 129, 129);
+    text-decoration: underline;
+}
+
+p.card-text {
+    font-family: $font-principal;
+    color: rgb(148, 129, 129);
+}
+
+a.btn.btn-primary {
+    font-family: $font-principal;
+    color: $letra-blanca;
+}
+

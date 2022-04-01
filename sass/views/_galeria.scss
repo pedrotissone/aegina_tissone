@@ -1,0 +1,42 @@
+
+.body3 {    
+    background-color: rgba(49, 48, 47, 0.624);
+}
+
+.header3 { 
+    width: 100%; 
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    background-color: $background-verde;
+    border: solid $letra-blanca 0.1rem;
+
+    &__title {
+        text-align: center;    
+        font-family: $font-principal;
+        font-size: 2.5rem;
+        color: $letra-blanca;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        word-spacing: 0.3rem;   
+    
+    }
+}
+
+.main3 {
+    width: 100%;
+}
+
+.picture3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &__img1, &__img2, &__img3 {
+    align-items: center;
+    margin: 0.5rem;
+    border: solid 0.2rem $letra-blanca;
+    }
+        
+
+}

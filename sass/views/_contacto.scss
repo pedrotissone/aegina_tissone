@@ -1,0 +1,50 @@
+
+.body6 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(79, 79, 70, 0.734);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-image: radial-gradient(gray , purple);
+}
+
+.contenedorFlex6 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60rem;
+    height: 70rem;    
+    background-image: url(../img/contacto/contacto-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 0.1rem rgba(79, 79, 70, 0.734);
+    border-radius: 3%;
+}
+
+.header6 {    
+    height: auto;
+
+    &__title {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 3rem;
+        height: 10rem;
+        color: rgb(101, 150, 165);
+        text-decoration: underline;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+}
+
+.main6 {
+    margin-bottom: 2rem;   
+  
+}
+
+.main__form {        
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(101, 150, 165);
+    font-style: italic;
+    border: solid 0.1rem rgb(101, 150, 165);    
+
+}

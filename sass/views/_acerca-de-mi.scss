@@ -1,0 +1,125 @@
+/*  ARCHIVO HTML 2 (ACERCA DE MI) */
+.body2 {
+    background-color: $background-verde
+}
+
+.contenedorPadre2 {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    
+}
+
+.contenedorFlex2 {
+    width: 80rem;
+    height: 95rem;
+    border: solid 0.1rem burlywood;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+    background-image: url(https://www.marinareservation.com/articles/wp-content/uploads/2016/06/Santorini-Greece-res.jpg);
+    background-size: cover;
+    margin-right: 2vw;
+    margin-left: 2vw;
+
+}
+
+.header2,
+.header2__title {    
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.659);
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+.main2 {
+    align-items: center;
+    border: solid 0.1rem burlywood;
+    height: 50rem;
+    width: 45rem;
+    font-family: 'Caveat', cursive;
+    color: rgba(255, 255, 255, 0.618);
+    padding: 1rem;
+
+}
+
+.footer2 {    
+    height: auto;
+    margin-left: 0rem;
+    margin-top: 1.7rem;
+    justify-content: center;
+    width:280px; 
+
+}
+
+.picture2__img {
+    border: solid 0.1rem rgb(167, 157, 145);
+    width: 280px;
+    height: 280px;
+
+}
+
+/* ACERCA DE MI MOBILE */
+
+@media screen and (max-width: 1000px) {
+    /* El cambio me lo hace a los 893 aprox no se porque */
+
+    .footer2 {
+        width:300px;        
+        align-items: center;
+    }
+
+    .picture2__img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 752px) {
+
+    .body2 {
+        background: none;
+    }
+
+    .contenedorPadre2 {
+        background-image: url(https://www.marinareservation.com/articles/wp-content/uploads/2016/06/Santorini-Greece-res.jpg);
+        border: solid 0.1rem gray;
+       
+
+    }
+    
+    .contenedorFlex2 {
+        margin: 0%;
+        background-image: none;
+        border: none;        
+ 
+    }
+
+    .header2 h2 {
+        color: rgba(128, 128, 128, 0.844);
+    }
+
+    .main2 {
+        width: 100%;        
+        color: rgb(128, 128, 128);
+        font-weight: 700;
+        border: solid 0.1rem gray;
+        margin: 0%;
+    }
+
+    .picture2__img {
+        border-radius: 50%;
+        width: 250px;
+        height: auto;
+        
+    }
+}
+
+@media screen and (max-width:430px) {
+    .contenedorPadre2 {
+        height: 658px;
+    }
+}
+
