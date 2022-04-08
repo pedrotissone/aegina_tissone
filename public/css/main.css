@@ -75,23 +75,30 @@ aside {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: rgba(54, 121, 114, 0.789); }
+  background-color: rgba(54, 121, 114, 0.789);
+  height: 39rem; }
   aside h2 {
     font-family: 'Source Serif Pro', serif;
-    text-decoration: underline;
+    font-size: 2rem;
     margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.884); }
+    color: rgba(255, 255, 255, 0.796); }
 
-.aside__menu li {
+.aside__menu {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: 'Source Serif Pro', serif;
-  margin: 0.7rem; }
-
-.aside__menu a {
-  font-family: 'Source Serif Pro', serif;
-  color: rgba(255, 255, 255, 0.884); }
+  justify-content: space-around; }
+  .aside__menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Serif Pro', serif;
+    margin: 0.7rem; }
+  .aside__menu a {
+    font-family: 'Source Serif Pro', serif;
+    color: rgba(255, 255, 255, 0.884); }
+    .aside__menu a:hover {
+      text-decoration: underline; }
 
 /* MAIN */
 .main {
@@ -124,14 +131,15 @@ footer {
     font-family: "Source Serif Pro", serif;
     color: black; }
   footer a:hover {
-    color: rgba(255, 255, 255, 0.796);
-    background-color: rgba(54, 121, 114, 0.789); }
+    text-decoration: underline; }
 
-.copyright {
+.copyright, .copyright6, .copyright5, .copyright4, .copyright3, .copyright2 {
   display: flex;
+  flex-flow: row, wrap;
   justify-content: center;
-  margin-top: 4rem;
-  margin-left: 8rem; }
+  align-items: center;
+  margin-top: 3%;
+  font-weight: 300; }
 
 /* INDEX MOBILE */
 @media screen and (max-width: 1365px) {
@@ -142,9 +150,7 @@ footer {
   .main {
     height: 350px;
     align-items: center; }
-  .main__img1,
-  .main__img2,
-  .main__img3 {
+  .main__img1, .main__img2, .main__img3 {
     height: 30rem;
     width: 30rem;
     margin-left: 3rem;
@@ -154,9 +160,7 @@ footer {
     margin: 0%; } }
 
 @media screen and (max-width: 1179px) {
-  .main__img1,
-  .main__img2,
-  .main__img3 {
+  .main__img1, .main__img2, .main__img3 {
     height: 30rem;
     width: 30rem;
     margin-left: 3rem; }
@@ -252,7 +256,7 @@ footer {
   .footer__email, .footer__intagram,
   .footer__ubicacion, .footer__whatsapp {
     margin-left: 3.5rem; }
-  .copyright {
+  .copyright, .copyright6, .copyright5, .copyright4, .copyright3, .copyright2 {
     justify-content: center; } }
 
 @media screen and (max-width: 893px) and (max-width: 412px) {
@@ -273,7 +277,7 @@ footer {
     margin: 0%;
     width: 100%;
     height: auto; }
-  .copyright {
+  .copyright, .copyright6, .copyright5, .copyright4, .copyright3, .copyright2 {
     width: 50rem;
     margin-top: 1rem;
     margin-left: 10rem;
@@ -296,7 +300,7 @@ footer {
   align-items: center;
   width: 60rem;
   height: 70rem;
-  background-image: url(../img/contacto/contacto-img.jpeg);
+  background-image: url(../img/contacto/tocado_de_flores.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 0.1rem rgba(79, 79, 70, 0.734);
@@ -321,6 +325,12 @@ footer {
   color: #6596a5;
   font-style: italic;
   border: solid 0.1rem #6596a5; }
+
+.copyright6 {
+  height: 2rem;
+  margin-top: 3rem;
+  margin-left: 0%;
+  width: auto; }
 
 .body5 {
   background-color: rgba(109, 104, 99, 0.823); }
@@ -351,7 +361,7 @@ footer {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 2%; }
-  .main5 .main5__titles h2 {
+  .main5 .main5__titles h3 {
     width: 100%;
     height: auto;
     font-family: "Source Serif Pro", serif;
@@ -376,6 +386,10 @@ p.card-text {
 a.btn.btn-primary {
   font-family: "Source Serif Pro", serif;
   color: rgba(255, 255, 255, 0.796); }
+
+.copyright5 {
+  margin-left: 0%;
+  margin-right: 0%; }
 
 .body4 {
   background-color: rgba(182, 162, 80, 0.59); }
@@ -406,7 +420,7 @@ a.btn.btn-primary {
     margin-top: 1%;
     margin-bottom: 2%; }
 
-.main4__titles h2 {
+.main4__titles h3 {
   font-family: "Source Serif Pro", serif;
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.796);
@@ -430,6 +444,9 @@ a.btn.btn-primary {
   font-family: "Source Serif Pro", serif;
   color: rgba(255, 255, 255, 0.796); }
 
+.copyright4 {
+  margin-left: 0%; }
+
 .body3 {
   background-color: rgba(49, 48, 47, 0.624); }
 
@@ -439,7 +456,8 @@ a.btn.btn-primary {
   flex-direction: row;
   justify-content: center;
   background-color: rgba(54, 121, 114, 0.789);
-  border: solid rgba(255, 255, 255, 0.796) 0.1rem; }
+  border: solid rgba(255, 255, 255, 0.796) 0.1rem;
+  margin-bottom: 1rem; }
   .header3__title {
     text-align: center;
     font-family: "Source Serif Pro", serif;
@@ -458,8 +476,13 @@ a.btn.btn-primary {
   justify-content: center; }
   .picture3__img1, .picture3__img2, .picture3__img3 {
     align-items: center;
-    margin: 0.5rem;
-    border: solid 0.2rem rgba(255, 255, 255, 0.796); }
+    border: solid 0.2rem rgba(255, 255, 255, 0.796);
+    margin: 1rem; }
+
+.copyright3 {
+  margin-left: 0%;
+  width: auto;
+  margin-bottom: 1%; }
 
 /*  ARCHIVO HTML 2 (ACERCA DE MI) */
 .body2 {
@@ -468,7 +491,9 @@ a.btn.btn-primary {
 .contenedorPadre2 {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .contenedorFlex2 {
   width: 80rem;
@@ -476,28 +501,32 @@ a.btn.btn-primary {
   border: solid 0.1rem burlywood;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  background-image: url(https://www.marinareservation.com/articles/wp-content/uploads/2016/06/Santorini-Greece-res.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/13/11/44/island-2139457_960_720.jpg);
   background-size: cover;
   margin-right: 2vw;
   margin-left: 2vw; }
 
 .header2,
 .header2__title {
-  font-family: 'Caveat', cursive;
+  font-family: "Source Serif Pro", serif;
   font-size: 3rem;
-  color: rgba(255, 255, 255, 0.659);
+  color: rgba(255, 255, 255, 0.796);
   margin-top: 0.5rem;
   padding: 1rem; }
 
 .main2 {
-  align-items: center;
   border: solid 0.1rem burlywood;
   height: 50rem;
   width: 45rem;
   font-family: 'Caveat', cursive;
-  color: rgba(255, 255, 255, 0.618);
+  color: rgba(255, 255, 255, 0.638);
   padding: 1rem; }
+  .main2 p {
+    margin-top: 6vh;
+    color: rgba(255, 255, 255, 0.796); }
 
 .footer2 {
   height: auto;
@@ -513,7 +542,6 @@ a.btn.btn-primary {
 
 /* ACERCA DE MI MOBILE */
 @media screen and (max-width: 1000px) {
-  /* El cambio me lo hace a los 893 aprox no se porque */
   .footer2 {
     width: 300px;
     align-items: center; }
@@ -521,29 +549,11 @@ a.btn.btn-primary {
     width: 200px;
     height: 200px; } }
 
-@media screen and (max-width: 752px) {
-  .body2 {
-    background: none; }
+@media screen and (max-width: 413px) {
   .contenedorPadre2 {
-    background-image: url(https://www.marinareservation.com/articles/wp-content/uploads/2016/06/Santorini-Greece-res.jpg);
-    border: solid 0.1rem gray; }
+    height: 660px; }
   .contenedorFlex2 {
+    height: 660px; }
+  .copyright2 {
     margin: 0%;
-    background-image: none;
-    border: none; }
-  .header2 h2 {
-    color: rgba(128, 128, 128, 0.844); }
-  .main2 {
-    width: 100%;
-    color: gray;
-    font-weight: 700;
-    border: solid 0.1rem gray;
-    margin: 0%; }
-  .picture2__img {
-    border-radius: 50%;
-    width: 250px;
-    height: auto; } }
-
-@media screen and (max-width: 430px) {
-  .contenedorPadre2 {
-    height: 658px; } }
+    width: auto; } }

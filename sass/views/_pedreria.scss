@@ -35,7 +35,7 @@
         margin-bottom: 2%; 
     }
     
-    .main5__titles h2 {
+    .main5__titles h3 {
         width: 100%;
         height: auto;
         font-family: $font-principal;
@@ -69,3 +69,8 @@ a.btn.btn-primary {
     color: $letra-blanca;
 }
 
+.copyright5 {
+    @extend .copyright;
+    margin-left: 0%;
+    margin-right: 0%;    
+}

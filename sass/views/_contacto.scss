@@ -6,6 +6,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-image: radial-gradient(gray , purple);
+    
 }
 
 .contenedorFlex6 {
@@ -15,7 +16,7 @@
     align-items: center;
     width: 60rem;
     height: 70rem;    
-    background-image: url(../img/contacto/contacto-img.jpeg);
+    background-image: url(../img/contacto/tocado_de_flores.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     border: solid 0.1rem rgba(79, 79, 70, 0.734);
@@ -46,5 +47,14 @@
     color: rgb(101, 150, 165);
     font-style: italic;
     border: solid 0.1rem rgb(101, 150, 165);    
+
+}
+
+.copyright6 {    
+    height: 2rem;
+    @extend .copyright;
+    margin-top: 3rem;
+    margin-left: 0%;
+    width: auto;
 
 }

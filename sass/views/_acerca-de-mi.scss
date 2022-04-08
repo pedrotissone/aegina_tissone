@@ -3,21 +3,17 @@
     background-color: $background-verde
 }
 
-.contenedorPadre2 {    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
+.contenedorPadre2 {   
+    @include flex();    
     
 }
 
 .contenedorFlex2 {
     width: 80rem;
     height: 95rem;
-    border: solid 0.1rem burlywood;
-    display: flex;
-    flex-direction: column;    
-    align-items: center;    
-    background-image: url(https://www.marinareservation.com/articles/wp-content/uploads/2016/06/Santorini-Greece-res.jpg);
+    border: solid 0.1rem burlywood;    
+    @include flex($direction: column);  
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/13/11/44/island-2139457_960_720.jpg);
     background-size: cover;
     margin-right: 2vw;
     margin-left: 2vw;
@@ -26,21 +22,27 @@
 
 .header2,
 .header2__title {    
-    font-family: 'Caveat', cursive;
+    font-family: $font-principal;
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.659);
+    color: $letra-blanca;
     margin-top: 0.5rem;
     padding: 1rem;
 }
 
-.main2 {
-    align-items: center;
+.main2 {    
     border: solid 0.1rem burlywood;
     height: 50rem;
     width: 45rem;
     font-family: 'Caveat', cursive;
-    color: rgba(255, 255, 255, 0.618);
+    color: rgba(255, 255, 255, 0.638);
     padding: 1rem;
+
+    p {
+        margin-top: 6vh;
+        color: $letra-blanca;        
+     
+    }
+   
 
 }
 
@@ -60,10 +62,14 @@
 
 }
 
+.copyright2 {
+    @extend .copyright;
+     
+}
+
 /* ACERCA DE MI MOBILE */
 
-@media screen and (max-width: 1000px) {
-    /* El cambio me lo hace a los 893 aprox no se porque */
+@media screen and (max-width: 1000px) {    
 
     .footer2 {
         width:300px;        
@@ -77,49 +83,19 @@
 
 }
 
-@media screen and (max-width: 752px) {
-
-    .body2 {
-        background: none;
-    }
+@media screen and (max-width:413px) {
 
     .contenedorPadre2 {
-        background-image: url(https://www.marinareservation.com/articles/wp-content/uploads/2016/06/Santorini-Greece-res.jpg);
-        border: solid 0.1rem gray;
-       
-
+        height: 660px;
     }
-    
     .contenedorFlex2 {
-        margin: 0%;
-        background-image: none;
-        border: none;        
- 
+        height: 660px;
     }
 
-    .header2 h2 {
-        color: rgba(128, 128, 128, 0.844);
+    .copyright2 {
+      margin: 0%;
+      width: auto;
     }
 
-    .main2 {
-        width: 100%;        
-        color: rgb(128, 128, 128);
-        font-weight: 700;
-        border: solid 0.1rem gray;
-        margin: 0%;
-    }
-
-    .picture2__img {
-        border-radius: 50%;
-        width: 250px;
-        height: auto;
-        
-    }
-}
-
-@media screen and (max-width:430px) {
-    .contenedorPadre2 {
-        height: 658px;
-    }
 }
 

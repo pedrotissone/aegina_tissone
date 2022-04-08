@@ -1,0 +1,5 @@
+Estos son los cambios que realicé para mejorar el SEO de mi proyecto:
+-Utilize las etiquetas meta description y meta keywords para cada una de las páginas de mi proyecto, orientandolas al contenido de las mismas
+-Modifiqué la etiqueta title tratando de describir de forma clara y concreta el contenido de cada página
+-Modifiqué algunos encabezados h2 por h3 para darles una correcta jerarquía a los mismos (página de flores preservadas y pedreria)
+-Modifiqué el nombre de las imagenes y su atributo alt, para que los mismos se identifiquen con lo que muestran las imagenes.

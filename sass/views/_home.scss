@@ -77,32 +77,45 @@ aside {
     grid-area: aside;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     padding: 1rem;
     background-color: rgba(54, 121, 114, 0.789);
+    height: 39rem;
 
     h2 {
         font-family: 'Source Serif Pro', serif;
-        text-decoration: underline;
+        font-size: 2rem;
         margin-bottom: 2rem;
-        color: rgba(255, 255, 255, 0.884);
+        color: $letra-blanca;
     }
 }
 
 .aside__menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;      
+  
 
     li {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;        
         font-family: 'Source Serif Pro', serif;
-        margin: 0.7rem;
+        margin: 0.7rem;    
+    
     }
 
     a {
         font-family: 'Source Serif Pro', serif;
-        color: rgba(255, 255, 255, 0.884);    
+        color: rgba(255, 255, 255, 0.884);
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    
     }
+
 }
 
 /* MAIN */
@@ -148,18 +161,20 @@ footer {
     color: black;     
     }
 
-    a:hover {      
-        color: $letra-blanca;
-        background-color: $background-verde;
+    a:hover {    
+        text-decoration: underline;
     }
-
 }
 
 .copyright {
     display: flex;
+    flex-flow: row, wrap;
     justify-content: center;
-    margin-top: 4rem;
-    margin-left: 8rem;
+    align-items: center;    
+    margin-top: 3%;          
+    font-weight: 300;
+    
+    
 }
 
 /* INDEX MOBILE */

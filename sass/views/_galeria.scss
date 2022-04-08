@@ -10,15 +10,16 @@
     justify-content: center;
     background-color: $background-verde;
     border: solid $letra-blanca 0.1rem;
+    margin-bottom: map-get($map: $spacings, $key:medium);
 
     &__title {
         text-align: center;    
         font-family: $font-principal;
         font-size: 2.5rem;
-        color: $letra-blanca;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        word-spacing: 0.3rem;   
+        color: $letra-blanca;        
+        margin-top: map-get($map: $spacings, $key:large);
+        margin-bottom: map-get($map: $spacings, $key:large);          
+        word-spacing: 0.3rem;         
     
     }
 }
@@ -33,10 +34,16 @@
     justify-content: center;
 
     &__img1, &__img2, &__img3 {
-    align-items: center;
-    margin: 0.5rem;
+    align-items: center;  
     border: solid 0.2rem $letra-blanca;
-    }
-        
+    margin: map-get($map: $spacings, $key:medium)
+    }        
 
+}
+
+.copyright3 {
+    @extend .copyright;
+    margin-left: 0%;
+    width: auto;
+    margin-bottom: 1%;
 }
