@@ -6,13 +6,14 @@
 .header4 {   
     background-color: $background-verde;
     border: solid whitesmoke 0.2rem;
+    text-align: center;
 
     h2 {
         width: 100%;    
         color: $letra-blanca;
         font-family: $font-principal;
         margin: 0.5%;
-        font-size: 1.8rem;           
+        font-size: 1.8rem;                     
     }
 
 }
