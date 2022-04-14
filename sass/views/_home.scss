@@ -169,9 +169,10 @@ footer {
 .copyright {
     grid-area: copyright;
     display: flex;
-    flex-flow: row, nowrap;
+    flex-flow: row, wrap;
     justify-content: center;        
-    margin-top: 5%;            
+    margin-top: 5%;
+    text-align: center;            
 
 }
 
@@ -262,7 +263,14 @@ footer {
 
 }
 
-@media screen and (max-width:429){
+@media screen and (max-width:429px){
+    
+    html {
+        font-size: 58%;
+    }
 
+    .main__img2 {
+        width: 37rem;
+    }
 }
 }

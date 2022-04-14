@@ -29,7 +29,7 @@
     padding: 1rem;
 }
 
-.main2 {    
+.main2 {   
     border: solid 0.1rem burlywood;
     height: 50rem;
     width: 45rem;
@@ -83,18 +83,27 @@
 
 }
 
-@media screen and (max-width:413px) {
+@media screen and (max-width:456px) {
 
-    .contenedorPadre2 {
-        height: 660px;
+    html {
+        font-size: 58%;
     }
+
     .contenedorFlex2 {
-        height: 660px;
+        height: 100%;
     }
 
-    .copyright2 {
-      margin: 0%;
-      width: auto;
+    .header2__title {
+        text-align: center;
+    }
+
+     .main2 {
+        width: auto;
+        text-align: center;
+    }
+
+    .main__img2 {
+        width: 37rem;
     }
 
 }

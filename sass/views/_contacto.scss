@@ -58,3 +58,17 @@
     width: auto;
 
 }
+
+// MOBILE CONTACTO
+
+@media screen and (max-width: 419px) {
+
+    
+    .contenedorFlex6 {
+        width: auto;
+    }
+
+    .header6__title {
+        text-align: center;
+    }      
+}
