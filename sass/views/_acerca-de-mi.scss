@@ -20,13 +20,18 @@
 
 }
 
-.header2,
-.header2__title {    
-    font-family: $font-principal;
-    font-size: 3rem;
-    color: $letra-blanca;
-    margin-top: 0.5rem;
-    padding: 1rem;
+.header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {    
+        font-family: $font-principal;
+        font-size: 3rem;
+        color: $letra-blanca;
+        margin-top: 0.5rem;
+        padding: 1rem;
+    }
 }
 
 .main2 {   

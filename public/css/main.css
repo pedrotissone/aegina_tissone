@@ -193,10 +193,10 @@ footer {
 .body6 {
   display: flex;
   justify-content: center;
-  background-color: rgba(79, 79, 70, 0.734);
+  background-color: #ddddc5;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-image: radial-gradient(gray, purple); }
+  height: 100%; }
 
 .contenedorFlex6 {
   display: flex;
@@ -204,32 +204,30 @@ footer {
   justify-content: flex-start;
   align-items: center;
   width: 60rem;
-  height: 70rem;
+  height: auto;
   background-image: url(../img/contacto/tocado_de_flores.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid 0.1rem rgba(79, 79, 70, 0.734);
+  border: solid 0.1rem #367972c9;
   border-radius: 3%; }
 
 .header6 {
-  height: auto; }
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .header6__title {
     font-family: 'Source Serif Pro', serif;
     font-size: 3rem;
     height: 10rem;
-    color: #6596a5;
-    text-decoration: underline;
-    font-style: italic;
+    color: #367972c9;
     margin-top: 1rem; }
 
 .main6 {
   margin-bottom: 2rem; }
 
 .main__form {
-  font-family: 'Source Serif Pro', serif;
-  color: #6596a5;
-  font-style: italic;
-  border: solid 0.1rem #6596a5; }
+  border: solid 0.1rem #367972c9; }
 
 .copyright6 {
   height: 2rem;
@@ -243,11 +241,15 @@ footer {
   .header6__title {
     text-align: center; } }
 
+@media screen and (max-width: 379px) {
+  .contenedorFlex6 {
+    height: 700px; } }
+
 .body5 {
   background-color: rgba(109, 104, 99, 0.823); }
 
 .header5 {
-  background-color: rgba(54, 121, 114, 0.789);
+  background-color: #367972c9;
   border: solid whitesmoke 0.2rem;
   text-align: center; }
   .header5 h2 {
@@ -307,7 +309,7 @@ a.btn.btn-primary {
   background-color: rgba(182, 162, 80, 0.59); }
 
 .header4 {
-  background-color: rgba(54, 121, 114, 0.789);
+  background-color: #367972c9;
   border: solid whitesmoke 0.2rem;
   text-align: center; }
   .header4 h2 {
@@ -366,9 +368,9 @@ a.btn.btn-primary {
 .header3 {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgba(54, 121, 114, 0.789);
+  flex-direction: column;
+  align-items: center;
+  background-color: #367972c9;
   border: solid rgba(255, 255, 255, 0.796) 0.1rem;
   margin-bottom: 1rem; }
   .header3__title {
@@ -399,7 +401,7 @@ a.btn.btn-primary {
 
 /*  ARCHIVO HTML 2 (ACERCA DE MI) */
 .body2 {
-  background-color: rgba(54, 121, 114, 0.789); }
+  background-color: #367972c9; }
 
 .contenedorPadre2 {
   display: flex;
@@ -422,13 +424,16 @@ a.btn.btn-primary {
   margin-right: 2vw;
   margin-left: 2vw; }
 
-.header2,
-.header2__title {
-  font-family: "Source Serif Pro", serif;
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 0.796);
-  margin-top: 0.5rem;
-  padding: 1rem; }
+.header2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header2__title {
+    font-family: "Source Serif Pro", serif;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.796);
+    margin-top: 0.5rem;
+    padding: 1rem; }
 
 .main2 {
   border: solid 0.1rem burlywood;
