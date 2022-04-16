@@ -27,7 +27,7 @@
 
     &__title {    
         font-family: $font-principal;
-        font-size: 3rem;
+        font-size: 4rem;
         color: $letra-blanca;
         margin-top: 0.5rem;
         padding: 1rem;
@@ -37,14 +37,12 @@
 .main2 {   
     border: solid 0.1rem burlywood;
     height: 50rem;
-    width: 45rem;
-    font-family: 'Caveat', cursive;
-    color: rgba(255, 255, 255, 0.638);
+    width: 45rem;      
     padding: 1rem;
 
     p {
         margin-top: 6vh;
-        color: $letra-blanca;        
+        color: rgb(242, 235, 193);             
      
     }
    
