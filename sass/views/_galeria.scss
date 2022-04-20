@@ -1,6 +1,6 @@
 
 .body3 {    
-    background-color: rgba(49, 48, 47, 0.624);
+    background-color: $background-verde;
 }
 
 .header3 { 
@@ -33,10 +33,12 @@
     flex-flow: row wrap;
     justify-content: center;
 
-    &__img1, &__img2, &__img3 {
+    &__img1, &__img2, &__img3, &__img4, &__img5, &__img6, &__img7  {
     align-items: center;  
-    border: solid 0.2rem $letra-blanca;
-    margin: map-get($map: $spacings, $key:medium)
+    border: solid 0.1rem $body-background;
+    margin: map-get($map: $spacings, $key:medium);
+    width: 304px;
+    height: 328px;
     }        
 
 }
@@ -46,4 +48,20 @@
     margin-left: 0%;
     width: auto;
     margin-bottom: 1%;
+}
+
+@media screen and (max-width:647px){
+    .picture3__img1, .picture3__img2, .picture3__img3, .picture3__img4, .picture3__img5, .picture3__img6, .picture3__img7 {
+        width: 184px;
+        height: 200px;                   
+
+    }
+}
+
+@media screen and (max-width:437px){
+    .picture3__img1, .picture3__img2, .picture3__img3, .picture3__img4, .picture3__img5, .picture3__img6, .picture3__img7 {
+        width: 140px;
+        height: 150px
+
+    }
 }
