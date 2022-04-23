@@ -22,7 +22,6 @@ body {
 
 .headerIndex {
     grid-area: header;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -122,17 +121,37 @@ aside {
 /* MAIN */
 
 .main {
-    grid-area: main;
+    grid-area: main;      
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-flow: row, nowrap;
+    justify-content: center;
     margin-top: 1%;        
-    height: auto;    
-    
+    height: auto;
+    width: 100%;
 
-    &__img1, &__img2, &__img3 {
-        height: 38rem;
-        width: 38rem;        
+    .images__back {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;     
+        position: relative;
+        
+    } 
+  
+    .images__top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;     
+        width: 100%;          
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 1.5s ease-in-out;    
+    
+    }
+
+    .images__top:hover {
+        opacity: 0;
     }
 
 }
@@ -179,26 +198,34 @@ footer {
 /* INDEX MOBILE */
 
 @media screen and (max-width: 1311px) {
-    
+
+       
     .main__img1, .main__img2, .main__img3 {
         width: 33rem;
     }
 
+    .main__imgback1, .main__imgback2, .main__imgback3 {
+        width: 33rem;
+    }
+
+
     .footer {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 }
 
 @media screen and (max-width:1165px){
-    .main__img1 {
-        display: none;
-    }
 
-    .main__img2, .main__img3 {
-        width: 38rem;
-        justify-content: center;
-    }
+    
+    .main__img1, .main__imgback2 {
+        display: none;
+    }   
+
+    // .main__img2, .main__img3, .main__imgback1, .main__imgback2 {
+    //     width: 38rem;
+        
+    // }
 }
 
 @media screen and (max-width:933px){
@@ -253,23 +280,24 @@ footer {
 
 @media screen and (max-width: 759px){    
  
-    .main__img3 {
+    .main__img3, .main__imgback3 {
         display: none;
     }
 
-    .main__img2 {
+    .main__img2, .main__imgback1 {
         width: 43rem;
     }
 
+ 
 }
 
-@media screen and (max-width:429px){
+@media screen and (max-width:456px){
     
     html {
         font-size: 58%;
     }
 
-    .main__img2 {
+    .main__img2, .main__imgback1 {
         width: 37rem;
     }
 }

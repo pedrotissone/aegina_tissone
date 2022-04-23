@@ -103,13 +103,28 @@ aside {
 .main {
   grid-area: main;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+  flex-flow: row, nowrap;
+  justify-content: center;
   margin-top: 1%;
-  height: auto; }
-  .main__img1, .main__img2, .main__img3 {
-    height: 38rem;
-    width: 38rem; }
+  height: auto;
+  width: 100%; }
+  .main .images__back {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    position: relative; }
+  .main .images__top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1.5s ease-in-out; }
+  .main .images__top:hover {
+    opacity: 0; }
 
 /* FOOTER */
 footer {
@@ -142,15 +157,14 @@ footer {
 @media screen and (max-width: 1311px) {
   .main__img1, .main__img2, .main__img3 {
     width: 33rem; }
+  .main__imgback1, .main__imgback2, .main__imgback3 {
+    width: 33rem; }
   .footer {
-    justify-content: space-between; } }
+    justify-content: space-around; } }
 
 @media screen and (max-width: 1165px) {
-  .main__img1 {
-    display: none; }
-  .main__img2, .main__img3 {
-    width: 38rem;
-    justify-content: center; } }
+  .main__img1, .main__imgback2 {
+    display: none; } }
 
 @media screen and (max-width: 933px) {
   .contenedorGrid {
@@ -179,15 +193,15 @@ footer {
       border: solid 0.1rem rgba(255, 255, 255, 0.796); } }
 
 @media screen and (max-width: 933px) and (max-width: 759px) {
-  .main__img3 {
+  .main__img3, .main__imgback3 {
     display: none; }
-  .main__img2 {
+  .main__img2, .main__imgback1 {
     width: 43rem; } }
 
-@media screen and (max-width: 933px) and (max-width: 429px) {
+@media screen and (max-width: 933px) and (max-width: 456px) {
   html {
     font-size: 58%; }
-  .main__img2 {
+  .main__img2, .main__imgback1 {
     width: 37rem; } }
 
 .body6 {
