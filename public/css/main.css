@@ -130,15 +130,16 @@ aside {
 footer {
   grid-area: footer;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
-  width: auto;
-  height: 2rem;
-  margin-top: 2rem; }
-  footer__intagram, footer__whatsapp, footer__email, footer__ubicacion {
-    font-family: 'Source Serif Pro', serif;
-    border-bottom: solid black 0.1rem; }
+  width: 100%;
+  margin-top: 3rem; }
+  footer .image__instagram, footer .image__whatsapp, footer .image__email, footer .image__ubicacion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; }
+  footer p {
+    color: #367972c9;
+    font-family: "Source Serif Pro", serif; }
   footer a {
     font-family: "Source Serif Pro", serif;
     color: black; }
@@ -442,7 +443,6 @@ a.btn.btn-primary {
 
 .contenedorFlex2 {
   width: 80rem;
-  height: 95rem;
   border: solid 0.1rem burlywood;
   display: flex;
   flex-direction: column;
@@ -455,6 +455,7 @@ a.btn.btn-primary {
   margin-left: 2vw; }
 
 .header2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -464,12 +465,28 @@ a.btn.btn-primary {
     color: rgba(255, 255, 255, 0.796);
     margin-top: 0.5rem;
     padding: 1rem; }
+  .header2 .aside__menu2 {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background-color: #367972c9;
+    border: solid 0.1rem #ddddc5;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
+    .header2 .aside__menu2 a {
+      font-family: 'Source Serif Pro', serif;
+      color: rgba(255, 255, 255, 0.884); }
+      .header2 .aside__menu2 a:hover {
+        text-decoration: underline; }
 
 .main2 {
   border: solid 0.1rem burlywood;
   height: 50rem;
   width: 45rem;
   padding: 1rem; }
+  .main2:hover {
+    background-color: #367972df; }
   .main2 p {
     margin-top: 6vh;
     color: #f2ebc1; }
@@ -488,6 +505,8 @@ a.btn.btn-primary {
 
 /* ACERCA DE MI MOBILE */
 @media screen and (max-width: 1000px) {
+  .header2__title {
+    text-align: center; }
   .footer2 {
     width: 300px;
     align-items: center; }
@@ -500,8 +519,6 @@ a.btn.btn-primary {
     font-size: 58%; }
   .contenedorFlex2 {
     height: 100%; }
-  .header2__title {
-    text-align: center; }
   .main2 {
     width: auto;
     text-align: center; }

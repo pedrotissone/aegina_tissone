@@ -9,8 +9,7 @@
 }
 
 .contenedorFlex2 {
-    width: 80rem;
-    height: 95rem;
+    width: 80rem;    
     border: solid 0.1rem burlywood;    
     @include flex($direction: column);  
     background-image: url(https://cdn.pixabay.com/photo/2017/03/13/11/44/island-2139457_960_720.jpg);
@@ -21,6 +20,7 @@
 }
 
 .header2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,28 @@
         font-size: 4rem;
         color: $letra-blanca;
         margin-top: 0.5rem;
-        padding: 1rem;
+        padding: 1rem;        
+    }
+
+    .aside__menu2 {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        background-color: $background-verde;
+        border: solid 0.1rem $body-background;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        
+
+        a {
+            font-family: 'Source Serif Pro', serif;
+            color: rgba(255, 255, 255, 0.884);
+            
+            &:hover {
+                text-decoration: underline;
+            }        
+        }
     }
 }
 
@@ -39,13 +60,17 @@
     height: 50rem;
     width: 45rem;      
     padding: 1rem;
+    
+
+    &:hover{
+        background-color: #367972df;        
+    }
 
     p {
         margin-top: 6vh;
         color: rgb(242, 235, 193);             
      
-    }
-   
+    }   
 
 }
 
@@ -72,7 +97,11 @@
 
 /* ACERCA DE MI MOBILE */
 
-@media screen and (max-width: 1000px) {    
+@media screen and (max-width: 1000px) {
+    
+    .header2__title {
+        text-align: center;
+    }
 
     .footer2 {
         width:300px;        
@@ -95,19 +124,17 @@
     .contenedorFlex2 {
         height: 100%;
     }
-
-    .header2__title {
-        text-align: center;
-    }
-
-     .main2 {
+    
+   
+    .main2 {
         width: auto;
-        text-align: center;
+        text-align:center;                
     }
 
     .main__img2 {
         width: 37rem;
     }
-
+    
+     
 }
 
