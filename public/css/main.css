@@ -130,7 +130,7 @@ aside {
 footer {
   grid-area: footer;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   margin-top: 3rem; }
   footer .image__instagram, footer .image__whatsapp, footer .image__email, footer .image__ubicacion {
@@ -519,8 +519,17 @@ a.btn.btn-primary {
     font-size: 58%; }
   .contenedorFlex2 {
     height: 100%; }
+    .contenedorFlex2 .aside__menu2 {
+      flex-flow: column nowrap;
+      align-items: center; }
+      .contenedorFlex2 .aside__menu2 li {
+        margin: 1%; }
   .main2 {
     width: auto;
     text-align: center; }
   .main__img2 {
     width: 37rem; } }
+
+@media screen and (max-width: 379px) {
+  .header2__title {
+    font-size: 3.3rem; } }

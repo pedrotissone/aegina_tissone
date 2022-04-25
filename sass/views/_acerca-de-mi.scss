@@ -123,6 +123,15 @@
 
     .contenedorFlex2 {
         height: 100%;
+
+        .aside__menu2 {
+            flex-flow: column nowrap;
+            align-items: center;
+            
+            li {
+                margin: 1%;
+            }
+        }
     }
     
    
@@ -133,8 +142,15 @@
 
     .main__img2 {
         width: 37rem;
-    }
+    }  
+ 
+}
+
+@media screen and (max-width:379px) {
     
-     
+    .header2__title {
+        font-size: 3.3rem;
+    }
+
 }
 

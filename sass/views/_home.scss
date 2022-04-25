@@ -161,9 +161,10 @@ aside {
 footer {
     grid-area: footer;
     display: flex;      
-    justify-content: space-around; 
+    justify-content: space-between; 
     width: 100%;    
     margin-top: 3rem;
+    
 
     .image__instagram, .image__whatsapp, .image__email, .image__ubicacion {       
         display: flex;
