@@ -19,33 +19,63 @@
     background-image: url(../img/contacto/tocado_de_flores.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid 0.1rem $background-verde;
-    border-radius: 3%;
+    background-position: center;
+    border: solid 0.1rem $background-verde;    
 }
 
 .header6 {    
     height: auto;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    
 
-    &__title {
+    .aside__menu6 {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        border: solid 0.1rem $body-background;
+        background-color: $background-verde;
+        
+        
+        
+
+        li {
+            padding: 1%;
+        }
+
+        a {
+            font-family: 'Source Serif Pro', serif;
+            color: rgba(255, 255, 255, 0.884);            
+            
+            &:hover {
+                text-decoration: underline;
+            }        
+        }
+    }
+
+    .header6__title {
+        width: 100%;
         font-family: 'Source Serif Pro', serif;
         font-size: 3rem;
-        font-weight: bolder;
-        color: $background-verde;
-        background-color: $body-background;                
-        margin-top: 3%;
-        margin-bottom: 5%;       
+        font-weight: bolder;        
+        color: $letra-blanca;
+        background-color: $background-verde;
+        border: solid 0.1rem $body-background;
+        padding: 1%;
+        margin-bottom: 2%;        
+        
     }
 
 }
 
 .main6 {
-    margin-bottom: 2rem;     
+    margin-bottom: 2rem;
+    width: 100%;     
   
 }
 
@@ -54,9 +84,25 @@
     flex-flow: column wrap;
     justify-content: center;            
     border: solid 0.1rem $background-verde;
+    padding: 2%;
     
     label {
-        width: 35rem;
+        padding: 1%;
+        font-family: 'Source Serif Pro', serif;
+        color: rgba(255, 255, 255, 0.884);
+    }
+
+    input {
+        font-family: 'Source Serif Pro', serif;            
+    }
+
+    .inputMargin1 {
+        padding: 1%;
+    }
+
+    .inputMargin2 {
+        padding: 1%;
+        background-color: $background-verde;       
     }
 }
 
@@ -71,11 +117,19 @@
 
 // MOBILE CONTACTO
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 475px) {
+
+    .header6 {
+
+        .aside__menu6 {       
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+    }
 
     
-    .contenedorFlex6 {
-        width: auto;
-    }
-   
+
 }
+
+    

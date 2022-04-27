@@ -29,6 +29,7 @@ body {
     align-items: center;
     background-color: rgba(54, 121, 114, 0.789);
     width: 100%;
+    
 
     .header__logo {
         height: 15rem;        
@@ -125,7 +126,7 @@ aside {
     display: flex;
     flex-flow: row, nowrap;
     justify-content: center;
-    margin-top: 1%;        
+    margin-top: 1%;           
     height: auto;
     width: 100%;
 
@@ -298,6 +299,16 @@ footer {
         font-size: 58%;
     }
 
+    .aside {
+        height: auto;
+    
+
+        .aside__menu {                        
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+    }
+    
     .main__img2, .main__imgback1 {
         width: 37rem;
     }

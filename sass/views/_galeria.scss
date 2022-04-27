@@ -12,14 +12,38 @@
     border: solid $letra-blanca 0.1rem;
     margin-bottom: map-get($map: $spacings, $key:medium);
 
+    .aside__menu3 {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        background-color: $background-verde;
+        border: solid 0.1rem $body-background;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        
+
+        a {
+            font-family: 'Source Serif Pro', serif;
+            color: rgba(255, 255, 255, 0.884);
+            
+            &:hover {
+                text-decoration: underline;
+            }        
+        }
+    }
+
     &__title {
+        height: 100%;
+        padding: 1%;
         text-align: center;    
         font-family: $font-principal;
         font-size: 2.5rem;
-        color: $letra-blanca;        
-        margin-top: map-get($map: $spacings, $key:large);
-        margin-bottom: map-get($map: $spacings, $key:large);          
-        word-spacing: 0.3rem;         
+        color: $letra-blanca;
+        border: solid 0.1rem $body-background;     
+        word-spacing: 0.3rem;
+        width: 100%;
+        background-color: $background-verde;                
     
     }
 }
@@ -63,5 +87,17 @@
         width: 140px;
         height: 150px
 
+    }
+
+    .header3 {
+
+        .aside__menu3 {
+            flex-flow: column nowrap;
+            align-items: center;
+
+            li {
+                margin: 1%;
+            }
+        }
     }
 }

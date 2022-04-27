@@ -11,12 +11,6 @@ html {
   font-size: 1.6rem;
   text-decoration: none; }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
 /* ARCHIVO HTML INDEX */
 body {
   background-color: #ddddc5; }
@@ -202,6 +196,11 @@ footer {
 @media screen and (max-width: 933px) and (max-width: 456px) {
   html {
     font-size: 58%; }
+  .aside {
+    height: auto; }
+    .aside .aside__menu {
+      flex-flow: column nowrap;
+      align-items: center; }
   .main__img2, .main__imgback1 {
     width: 37rem; } }
 
@@ -223,36 +222,63 @@ footer {
   background-image: url(../img/contacto/tocado_de_flores.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid 0.1rem #367972c9;
-  border-radius: 3%; }
+  background-position: center;
+  border: solid 0.1rem #367972c9; }
 
 .header6 {
   height: auto;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   text-align: center; }
-  .header6__title {
+  .header6 .aside__menu6 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border: solid 0.1rem #ddddc5;
+    background-color: #367972c9; }
+    .header6 .aside__menu6 li {
+      padding: 1%; }
+    .header6 .aside__menu6 a {
+      font-family: 'Source Serif Pro', serif;
+      color: rgba(255, 255, 255, 0.884); }
+      .header6 .aside__menu6 a:hover {
+        text-decoration: underline; }
+  .header6 .header6__title {
+    width: 100%;
     font-family: 'Source Serif Pro', serif;
     font-size: 3rem;
     font-weight: bolder;
-    color: #367972c9;
-    background-color: #ddddc5;
-    margin-top: 3%;
-    margin-bottom: 5%; }
+    color: rgba(255, 255, 255, 0.796);
+    background-color: #367972c9;
+    border: solid 0.1rem #ddddc5;
+    padding: 1%;
+    margin-bottom: 2%; }
 
 .main6 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  width: 100%; }
 
 .main__form {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  border: solid 0.1rem #367972c9; }
+  border: solid 0.1rem #367972c9;
+  padding: 2%; }
   .main__form label {
-    width: 35rem; }
+    padding: 1%;
+    font-family: 'Source Serif Pro', serif;
+    color: rgba(255, 255, 255, 0.884); }
+  .main__form input {
+    font-family: 'Source Serif Pro', serif; }
+  .main__form .inputMargin1 {
+    padding: 1%; }
+  .main__form .inputMargin2 {
+    padding: 1%;
+    background-color: #367972c9; }
 
 .copyright6 {
   height: 2rem;
@@ -260,22 +286,37 @@ footer {
   margin-left: 0%;
   width: auto; }
 
-@media screen and (max-width: 500px) {
-  .contenedorFlex6 {
-    width: auto; } }
+@media screen and (max-width: 475px) {
+  .header6 .aside__menu6 {
+    flex-flow: column nowrap;
+    align-items: center; } }
 
 .body5 {
   background-color: rgba(109, 104, 99, 0.823); }
 
-.header5 {
+.header5 .aside__menu5 {
+  border: solid 0.1rem rgba(255, 255, 255, 0.796);
   background-color: #367972c9;
-  border: solid whitesmoke 0.2rem;
+  border-bottom: 0; }
+
+.header5 li {
   text-align: center; }
-  .header5 h2 {
-    color: rgba(255, 255, 255, 0.796);
-    font-family: "Source Serif Pro", serif;
-    margin: 0.5%;
-    font-size: 1.8rem; }
+
+.header5 a {
+  color: rgba(255, 255, 255, 0.796);
+  text-decoration: none;
+  font-family: "Source Serif Pro", serif; }
+  .header5 a:hover {
+    text-decoration: underline; }
+
+.header5 h2 {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.796);
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.8rem;
+  border: solid 0.1rem rgba(255, 255, 255, 0.796);
+  background-color: #367972c9;
+  text-align: center; }
 
 .main5 {
   height: auto;
@@ -324,19 +365,40 @@ a.btn.btn-primary {
   margin-left: 0%;
   margin-right: 0%; }
 
+@media screen and (max-width: 723px) {
+  .header5 .aside__menu5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header5 .aside__menu5 li {
+      width: 100%; } }
+
 .body4 {
   background-color: rgba(182, 162, 80, 0.59); }
 
-.header4 {
+.header4 .aside__menu4 {
+  border: solid 0.1rem rgba(255, 255, 255, 0.796);
   background-color: #367972c9;
-  border: solid whitesmoke 0.2rem;
+  border-bottom: 0; }
+
+.header4 li {
   text-align: center; }
-  .header4 h2 {
-    width: 100%;
-    color: rgba(255, 255, 255, 0.796);
-    font-family: "Source Serif Pro", serif;
-    margin: 0.5%;
-    font-size: 1.8rem; }
+
+.header4 a {
+  color: rgba(255, 255, 255, 0.796);
+  text-decoration: none;
+  font-family: "Source Serif Pro", serif; }
+  .header4 a:hover {
+    text-decoration: underline; }
+
+.header4 h2 {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.796);
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.8rem;
+  border: solid 0.1rem rgba(255, 255, 255, 0.796);
+  background-color: #367972c9;
+  text-align: center; }
 
 .main4 {
   height: auto;
@@ -352,7 +414,8 @@ a.btn.btn-primary {
     flex-direction: row;
     justify-content: center;
     margin-top: 1%;
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    text-align: center; }
 
 .main4__titles h3 {
   font-family: "Source Serif Pro", serif;
@@ -376,10 +439,21 @@ p.card-text {
 
 a.btn.btn-primary {
   font-family: "Source Serif Pro", serif;
-  color: rgba(255, 255, 255, 0.796); }
+  color: rgba(255, 255, 255, 0.796);
+  background-color: #367972c9;
+  border: #ddddc5;
+  font-size: 1.3rem; }
 
 .copyright4 {
   margin-left: 0%; }
+
+@media screen and (max-width: 723px) {
+  .header4 .aside__menu4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header4 .aside__menu4 li {
+      width: 100%; } }
 
 .body3 {
   background-color: #367972c9; }
@@ -392,14 +466,31 @@ a.btn.btn-primary {
   background-color: #367972c9;
   border: solid rgba(255, 255, 255, 0.796) 0.1rem;
   margin-bottom: 1rem; }
+  .header3 .aside__menu3 {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background-color: #367972c9;
+    border: solid 0.1rem #ddddc5;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
+    .header3 .aside__menu3 a {
+      font-family: 'Source Serif Pro', serif;
+      color: rgba(255, 255, 255, 0.884); }
+      .header3 .aside__menu3 a:hover {
+        text-decoration: underline; }
   .header3__title {
+    height: 100%;
+    padding: 1%;
     text-align: center;
     font-family: "Source Serif Pro", serif;
     font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.796);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    word-spacing: 0.3rem; }
+    border: solid 0.1rem #ddddc5;
+    word-spacing: 0.3rem;
+    width: 100%;
+    background-color: #367972c9; }
 
 .main3 {
   width: 100%; }
@@ -428,7 +519,12 @@ a.btn.btn-primary {
 @media screen and (max-width: 437px) {
   .picture3__img1, .picture3__img2, .picture3__img3, .picture3__img4, .picture3__img5, .picture3__img6, .picture3__img7 {
     width: 140px;
-    height: 150px; } }
+    height: 150px; }
+  .header3 .aside__menu3 {
+    flex-flow: column nowrap;
+    align-items: center; }
+    .header3 .aside__menu3 li {
+      margin: 1%; } }
 
 /*  ARCHIVO HTML 2 (ACERCA DE MI) */
 .body2 {
@@ -463,8 +559,9 @@ a.btn.btn-primary {
     font-family: "Source Serif Pro", serif;
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.796);
-    margin-top: 0.5rem;
-    padding: 1rem; }
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem; }
   .header2 .aside__menu2 {
     width: 100%;
     height: auto;

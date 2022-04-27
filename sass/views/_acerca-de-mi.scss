@@ -29,8 +29,9 @@
         font-family: $font-principal;
         font-size: 4rem;
         color: $letra-blanca;
-        margin-top: 0.5rem;
-        padding: 1rem;        
+        margin-top: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;        
     }
 
     .aside__menu2 {
@@ -63,12 +64,14 @@
     
 
     &:hover{
-        background-color: #367972df;        
+        background-color: #367972df;
+                
     }
 
     p {
         margin-top: 6vh;
-        color: rgb(242, 235, 193);             
+        color: rgb(242, 235, 193);
+                   
      
     }   
 
