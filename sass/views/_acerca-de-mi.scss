@@ -54,6 +54,10 @@
             }        
         }
     }
+
+    .hambur, .hambur__menu, .hambur__input {
+        display: none;
+    }
 }
 
 .main2 {   
@@ -127,14 +131,32 @@
     .contenedorFlex2 {
         height: 100%;
 
-        .aside__menu2 {
-            flex-flow: column nowrap;
-            align-items: center;
-            
-            li {
-                margin: 1%;
+      
+            .hambur {
+                display: block;
+                margin: 1% auto;               
+
+                .hambur__image {
+                    display: block;
+                    cursor: pointer;
+                    
+                }
+                              
             }
-        }
+
+            .hambur__input:checked + .aside__menu2 {
+                display: flex;                              
+                flex-flow: column nowrap;
+                align-items: center;           
+            }        
+            
+            .aside__menu2 {                             
+                display: none;
+
+                li {
+                    margin: 1%;
+                }
+            }
     }
     
    

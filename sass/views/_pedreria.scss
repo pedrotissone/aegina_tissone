@@ -5,6 +5,10 @@
 
 .header5 {
 
+    .hambur, .hambur__menu, .hambur__input {
+        display: none;
+    }
+
     .aside__menu5 {
         border: solid 0.1rem $letra-blanca;
         background-color: $background-verde;
@@ -103,14 +107,31 @@ a.btn.btn-primary {
 
     .header5 {
 
-        .aside__menu5 {            
+        .hambur {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-color: $background-verde;               
+
+            .hambur__image {
+                display: block;
+                cursor: pointer;
+                padding: 1%;                
+            }                          
+        }
+
+        .aside__menu5 {                             
+            display: none;
 
             li {
                 width: 100%;
             }
         }
+
+        .hambur__input:checked + .aside__menu5 {
+            display: flex;                              
+            flex-flow: column nowrap;
+            align-items: center;           
+        }        
     }
 }

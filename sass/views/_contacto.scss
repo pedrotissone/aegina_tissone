@@ -31,6 +31,10 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+
+    .hambur, .hambur__menu, .hambur__input {
+        display: none;
+    }
     
 
     .aside__menu6 {
@@ -40,13 +44,8 @@
         justify-content: space-around;
         border: solid 0.1rem $body-background;
         background-color: $background-verde;
+        padding: 2%;
         
-        
-        
-
-        li {
-            padding: 1%;
-        }
 
         a {
             font-family: 'Source Serif Pro', serif;
@@ -66,10 +65,10 @@
         color: $letra-blanca;
         background-color: $background-verde;
         border: solid 0.1rem $body-background;
-        padding: 1%;
+        padding: 1.5%;
         margin-bottom: 2%;        
         
-    }
+    }   
 
 }
 
@@ -121,14 +120,33 @@
 
     .header6 {
 
-        .aside__menu6 {       
-            flex-flow: column nowrap;
-            align-items: center;
+        .hambur {
+            display: block;
+            margin: 1% auto;               
+
+            .hambur__image {
+                display: block;
+                cursor: pointer;
+                
+            }
+                          
         }
 
-    }
+        .hambur__input:checked + .aside__menu6 {
+            display: flex;                              
+            flex-flow: column nowrap;
+            align-items: center;           
+        }        
+        
+        .aside__menu6 {                             
+            display: none;
 
-    
+            li {
+                margin: 1%;
+            }
+        }      
+
+    }    
 
 }
 

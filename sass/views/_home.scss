@@ -82,12 +82,11 @@ aside {
     background-color: rgba(54, 121, 114, 0.789);
     height: 39rem;
     width: 17.2rem;
+   
+}
 
-    h2 {
-        font-family: 'Source Serif Pro', serif;
-        font-size: 2rem;        
-        color: $letra-blanca;
-    }
+.hambur, .hambur__menu, .hambur__input {
+    display: none;
 }
 
 .aside__menu {
@@ -263,12 +262,8 @@ footer {
     .aside {
         width: 100%;
         height: auto;
-        flex-direction: row;              
+        flex-direction: row;           
         
-
-        h2 {
-            display: none;
-        }
 
         .aside__menu {
             width: 100%;
@@ -299,14 +294,39 @@ footer {
         font-size: 58%;
     }
 
-    .aside {
-        height: auto;
-    
+    .headerIndex {
+        border-bottom: solid 0.1rem $letra-blanca;
+    }
 
-        .aside__menu {                        
+    .aside {
+        flex-direction: column;
+        height: auto;
+
+        .aside__menu {                             
+            display: none;
+
+            li {
+                margin: 1%;
+            }
+        }
+        
+        .hambur {
+            display: block;
+            margin: 1% auto;               
+
+            .hambur__image {
+                display: block;
+                cursor: pointer;                
+            }                          
+        }
+
+        .hambur__input:checked + .aside__menu {
+            display: flex;                              
             flex-flow: column nowrap;
             align-items: center;
-        }
+            border-top: none;           
+        }   
+    
     }
     
     .main__img2, .main__imgback1 {
